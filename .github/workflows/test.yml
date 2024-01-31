@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
@@ -33,7 +33,7 @@ jobs:
         XDEBUG_MODE: coverage
 
     - name: Upload Code Coverage Report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: test-results
@@ -44,7 +44,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: gh_pages
 
@@ -55,7 +55,7 @@ jobs:
         git rm -rf .
 
     - name: Download Code Coverage Report
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: test-results
         path: test-results
