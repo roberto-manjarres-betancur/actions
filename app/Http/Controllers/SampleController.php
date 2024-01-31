@@ -13,6 +13,6 @@ class SampleController extends Controller
 
     public function new_page()
     {
-        return 'New page!';
+        return 'New page!--';
     }
 }
