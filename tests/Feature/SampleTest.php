@@ -14,6 +14,6 @@ class SampleTest extends TestCase
         $response = $this->get('/welcome');
 
         $response->assertStatus(200);
-        $response->assertSeeText('Welcome to Laravel Test Project!');
+        $response->assertSeeText('Welcome to Laravel Test Projectssssss!');
     }
 }
