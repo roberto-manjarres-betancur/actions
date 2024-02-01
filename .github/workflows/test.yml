@@ -22,7 +22,12 @@ jobs:
       run: composer update
 
     - name: Copy example .env file
-      run: cp .env.example .env
+      run: |
+        cp .env.example .env
+        sed -i 's/_SECRET_DB_PASSWORD/$DB_PASSWORD/g' .env
+      env:
+        DB_PASSWORD: ${{ secrets.PROD_DB_PASSWORD }}
+
 
     - name: Install App key
       run: php artisan key:generate
