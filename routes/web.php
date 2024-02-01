@@ -18,6 +18,23 @@ use App\Http\Controllers\SampleController;
 Route::get('/welcome', [SampleController::class, 'welcome']);
 Route::get('/new_page', [SampleController::class, 'new_page']);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });

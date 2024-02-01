@@ -8,7 +8,7 @@ class SampleController extends Controller
 {
     public function welcome()
     {
-        return 'Welcome to Laravel Test Project!';
+        return 'Welcome to Laravel Test Project! modified';
     }
 
     public function new_page()
