@@ -1,4 +1,4 @@
-name: Laravel Test
+name: Run coverage tests
 
 on: [push, pull_request]
 
